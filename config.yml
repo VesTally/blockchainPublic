@@ -1,0 +1,36 @@
+chain_id: "vestally"
+genesis:
+  app_state:
+    staking:
+      params:
+        bond_denom: "vbt"
+accounts:
+  - name: VestallyAdmin1
+    coins: ["2000000vtt","2000000vbt"]
+  - name: VestallyAdmin2
+    coins: ["1000000vtt","1000000vbt"]
+  - name: VestallyAdmin3
+    coins: ["1000000vtt","1000000vbt"]
+  - name: VestallyAdmin4
+    coins: ["1000000vtt","1000000vbt"]
+  - name: VestallyAdmin5
+    coins: ["1000000vtt","1000000vbt"]
+
+validator:
+  name: VestallyAdmin1
+  staked: "1000001vbt"
+  name: VestallyAdmin2
+  staked: "1000000vbt"
+  name: VestallyAdmin3
+  staked: "1000000vbt"
+
+client:
+  openapi:
+    path: "docs/static/openapi.yml"
+  vuex:
+    path: "vue/src/store"
+faucet:
+  name:   name: VestallyAdmin4
+  staked: "1000000vbt"
+
+  coins: ["5vbt"]

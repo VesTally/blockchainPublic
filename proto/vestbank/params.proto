@@ -1,0 +1,12 @@
+syntax = "proto3";
+package vestally.vestbank;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "vestally/x/vestbank/types";
+
+// Params defines the parameters for the module.
+message Params {
+  option (gogoproto.goproto_stringer) = false;
+  
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+package vestally.vestbank;
+
+import "gogoproto/gogo.proto";
+import "vestbank/params.proto";
+// this line is used by starport scaffolding # genesis/proto/import
+
+option go_package = "vestally/x/vestbank/types";
+
+// GenesisState defines the vestbank module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+  // this line is used by starport scaffolding # genesis/proto/state
+}
